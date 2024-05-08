@@ -1,23 +1,35 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="./style.scss">
     <link rel="stylesheet" href="./style.css">
-    <title>Document</title>
+    <title>To-do Board</title>
 </head>
+
 <body>
 
-    <div id="todoContainer" class="todo-container">
-        <h2>To-Do</h2>
-        <input type="text" name="todo" id="todoInput" placeholder="Add new to-do">
-        <button id="addTodo">Add New</button>
-        <ul id="todoList">
-            
-        </ul>
+    <div class="todo-prompt-container">
+        <div id="todoContainer" class="todo-container">
+            <h2 class="heading">To-Do</h2>
+            <input type="text" class="input" name="todo" id="todoInput" placeholder="Add a new task">
+            <button id="addBtn">Add</button>
+        </div>
     </div>
-    
+    <div class="content-container">
+        <div class="fridge">
+            <div class="postit-container">
+                <div class="postit">
+                    <ul id="todoList">
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+
     <script src="./script.js"></script>
 </body>
+
 </html>

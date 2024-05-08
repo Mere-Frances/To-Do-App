@@ -2,4 +2,135 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  background-color: #ffeae1;
+}
+
+.todo-prompt-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 30vh;
+  width: 100%;
+}
+.todo-prompt-container .todo-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  gap: 10px;
+  width: 20%;
+  height: 80%;
+  padding: 15px;
+  border: 2px dashed #DAA06D;
+  border-radius: 15px;
+  background-color: #EADDCA;
+  box-shadow: 0 0 0 4px #EADDCA, 4px 4px 10px -4px rgb(54, 43, 43);
+  transition: 0.4s ease-in-out;
+}
+.todo-prompt-container .todo-container .heading {
+  color: #DAA06D;
+  background-color: transparent;
+  letter-spacing: 0.5em;
+  text-align: center;
+  padding-bottom: 0.5em;
+  text-shadow: inset -1px -1px 1px #DAA06D;
+}
+.todo-prompt-container .todo-container .input {
+  outline: none;
+  padding: 0.5em;
+  border: 1px solid #DAA06D;
+  color: #DAA06D;
+  width: 14em;
+  height: 3em;
+  border-radius: 10px;
+  background-color: #EADDCA;
+  text-align: center;
+}
+.todo-prompt-container .todo-container input[type=checkbox] {
+  margin: 10px;
+  list-style: none;
+}
+.todo-prompt-container .todo-container ::-moz-placeholder {
+  color: #DAA06D;
+  text-align: center;
+}
+.todo-prompt-container .todo-container ::placeholder {
+  color: #DAA06D;
+  text-align: center;
+}
+.todo-prompt-container .todo-container #addBtn {
+  align-self: center;
+  margin-top: 0.5em;
+  border-radius: 10px;
+  outline: none;
+  border: none;
+  color: white;
+  background-color: #E5AA70;
+  font-weight: bold;
+  letter-spacing: 0.1em;
+  transition: 0.4s ease-in-out opacity, 0.1s ease-in-out active;
+  padding: 1em;
+  box-shadow: 4px 4px 10px -7px rgb(54, 43, 43);
+}
+.todo-prompt-container .todo-container #addBtn:hover {
+  background-color: #ff927c;
+}
+.todo-prompt-container .todo-container #addBtn:active {
+  transform: translateX(0.1em) translateY(0.1em);
+  box-shadow: none;
+}
+
+.content-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+}
+.content-container .fridge {
+  padding: 1%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 70%;
+  gap: 2rem;
+}
+.content-container .fridge .postit-container {
+  position: relative;
+  display: flex;
+  padding: 5%;
+  height: 92vh;
+  width: 98%;
+  background-image: url(./images/board.png);
+  background-size: cover;
+  background-position: center;
+  gap: 5rem;
+  box-shadow: 0px 0px 17px -4px rgb(54, 43, 43);
+}
+.content-container .fridge .todoList li {
+  list-style-type: none;
+  list-style: none;
+}
+.content-container .fridge li {
+  list-style-type: none;
+  list-style: none;
+}
+.content-container .fridge .postit-container li {
+  box-sizing: border-box;
+  margin: 10px;
+  position: absolute;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  height: 150px;
+  width: 170px;
+  border-radius: 2px 2px 25px 2px;
+  box-shadow: 10px 10px 18px -12px rgba(0, 0, 0, 0.75);
+}
+.content-container .fridge .postit-container li:hover {
+  z-index: 100;
 }/*# sourceMappingURL=style.css.map */

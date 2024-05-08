@@ -4,3 +4,150 @@
     box-sizing: border-box;
 }
 
+body {
+    font-family: Arial, sans-serif;
+
+    background-color: #ffeae1;
+}
+
+.todo-prompt-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 30vh;
+    width: 100%;
+
+    .todo-container {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        gap: 10px;
+        width: 20%;
+        height: 80%;
+        padding: 15px;
+        border: 2px dashed #DAA06D;
+        border-radius: 15px;
+        background-color: #EADDCA;
+        -webkit-box-shadow: 0 0 0 4px #EADDCA, 4px 4px 10px -4px rgba(54, 43, 43, 1);
+        -moz-box-shadow: 0 0 0 4px #EADDCA, 4px 4px 10px -4px rgba(54, 43, 43, 1);
+        box-shadow: 0 0 0 4px #EADDCA, 4px 4px 10px -4px rgba(54, 43, 43, 1);
+        transition: .4s ease-in-out;
+
+        .heading {
+            color: #DAA06D;
+            background-color: transparent;
+            letter-spacing: .5em;
+            text-align: center;
+            padding-bottom: .5em;
+            text-shadow: inset -1px -1px 1px #DAA06D;
+        }
+
+        .input {
+            outline: none;
+            padding: 0.5em;
+            border: 1px solid #DAA06D;
+            color: #DAA06D;
+            width: 14em;
+            height: 3em;
+            border-radius: 10px;
+            background-color: #EADDCA;
+            text-align: center;
+        }
+        input[type="checkbox"] {
+            margin: 10px;
+            list-style: none;
+        }
+
+        ::placeholder {
+            color: #DAA06D;
+            text-align: center;
+        }
+        #addBtn {
+            align-self: center;
+            margin-top: .5em;
+            border-radius: 10px;
+            outline: none;
+            border: none;
+            color: white;
+            background-color: #E5AA70;
+            font-weight: bold;
+            letter-spacing: 0.1em;
+            transition: .4s ease-in-out opacity, .1s ease-in-out active;
+            padding: 1em;
+            -webkit-box-shadow: 4px 4px 10px -7px rgba(54, 43, 43, 1);
+            -moz-box-shadow: 4px 4px 10px -7px rgba(54, 43, 43, 1);
+            box-shadow: 4px 4px 10px -7px rgba(54, 43, 43, 1);
+        }
+        
+        #addBtn:hover {
+            background-color: #ff927c;
+        }
+        
+        #addBtn:active {
+            transform: translateX(0.1em) translateY(0.1em);
+            box-shadow: none;
+        }
+    }
+}
+
+.content-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    .fridge {
+        padding: 1%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        width: 70%;
+        gap: 2rem;
+        .postit-container {
+            position: relative;
+            display: flex;
+            padding: 5%;
+            height: 92vh;
+            width: 98%;
+            background-image: url(./images/board.png);
+            background-size: cover;
+            background-position: center;
+            gap: 5rem;
+            -webkit-box-shadow: 0px 0px 17px -4px rgba(54, 43, 43, 1);
+            -moz-box-shadow: 0px 0px 17px -4px rgba(54, 43, 43, 1);
+            box-shadow: 0px 0px 17px -4px rgba(54, 43, 43, 1);
+        }
+        .todoList li {
+            list-style-type: none;
+            list-style: none;
+        }
+        
+        li {
+            list-style-type: none;
+            list-style: none;
+        }
+        
+        .postit-container li {
+            box-sizing: border-box;
+            margin: 10px;
+            position: absolute;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+            height: 150px;
+            width: 170px;
+            border-radius: 2px 2px 25px 2px;
+            -webkit-box-shadow: 10px 10px 18px -12px rgba(0, 0, 0, 0.75);
+            -moz-box-shadow: 10px 10px 18px -12px rgba(0, 0, 0, 0.75);
+            box-shadow: 10px 10px 18px -12px rgba(0, 0, 0, 0.75);
+        }
+        
+        .postit-container li:hover {
+            z-index: 100;
+        }
+    }
+}
+
+
+
